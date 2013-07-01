@@ -78,5 +78,7 @@ module Bunsho
 
     config.store_dir = "/var/lib/bunsho"
     config.default_available_count = 3
+
+    config.main_service_url = nil
   end
 end
