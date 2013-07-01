@@ -4,6 +4,7 @@ gem 'rails'
 gem 'jquery-rails'
 gem 'activeadmin'
 gem 'devise_cas_authenticatable'
+gem 'validates_timeliness'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

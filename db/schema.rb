@@ -28,6 +28,16 @@ ActiveRecord::Schema.define(:version => 20130701103446) do
   add_index "active_admin_comments", ["namespace"], :name => "index_active_admin_comments_on_namespace"
   add_index "active_admin_comments", ["resource_type", "resource_id"], :name => "index_admin_notes_on_resource_type_and_resource_id"
 
+  create_table "documents", :force => true do |t|
+    t.integer  "available_count",                     :null => false
+    t.string   "uuid",                                :null => false
+    t.string   "mime_type",                           :null => false
+    t.boolean  "drm",              :default => false, :null => false
+    t.integer  "downloaded_count", :default => 0
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at",                          :null => false
+  end
+
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
     t.text     "data"
