@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails'
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.3.0'
 gem 'activeadmin'
 gem 'devise_cas_authenticatable'
 gem 'validates_timeliness'
+gem 'capistrano'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
