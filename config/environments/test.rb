@@ -36,3 +36,6 @@ Bunsho::Application.configure do
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
 end
+
+file = File.dirname(__FILE__) + '/../application.local.rb'
+require file if File.exists? file

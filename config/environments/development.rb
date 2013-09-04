@@ -36,3 +36,6 @@ Bunsho::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 end
+
+file = File.dirname(__FILE__) + '/../application.local.rb'
+require file if File.exists? file
