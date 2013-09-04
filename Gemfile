@@ -6,6 +6,7 @@ gem 'activeadmin'
 gem 'devise_cas_authenticatable'
 gem 'validates_timeliness'
 gem 'capistrano'
+gem 'bootstrap-sass'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -13,6 +14,7 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.0.3'
   gem 'turbo-sprockets-rails3'
+  gem 'findit_font', :git => 'git://github.com/dtulibrary/findit_font.git'
 end
 
 group :test do

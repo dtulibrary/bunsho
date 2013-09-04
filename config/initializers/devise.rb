@@ -96,6 +96,8 @@ Devise.setup do |config|
   # config.pepper = "860a638b9d07f3b3a71036e02fdedecc42acf30b13bc28962df88e12"+
   # "389075a685b433e64bdb7be6907bcd453f75b03670ece964946664979b472385556b2f37"
 
+  config.secret_key = '--secret_key--'
+
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
   # confirming his account. For instance, if set to 2.days, the user will be

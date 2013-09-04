@@ -1,0 +1,19 @@
+@import 'bunsho_defaults';
+@import 'bunsho_mixins';
+
+input {
+  &.no-margin {
+    margin: 0px;
+  }
+
+  &[type = 'text']:focus {
+    @include focused_field;
+  }
+}
+
+textarea {
+  &:focus {
+    @include focused_field;
+  }
+}
+
