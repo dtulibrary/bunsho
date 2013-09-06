@@ -5,6 +5,7 @@ gem 'jquery-rails', '~> 2.3.0'
 gem 'activeadmin'
 gem 'devise_cas_authenticatable'
 gem 'validates_timeliness'
+gem 'uuidtools'
 gem 'capistrano'
 gem 'bootstrap-sass'
 
@@ -23,6 +24,7 @@ group :test do
   gem 'simplecov-rcov', :require => false
   gem 'mocha', :require => false
   gem 'factory_girl_rails'
+  gem 'webmock'
 end
 
 group :test, :development do

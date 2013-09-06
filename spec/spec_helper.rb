@@ -17,6 +17,7 @@ require 'rspec/rails'
 require 'rspec/autorun'
 require 'mocha'
 require 'factory_girl_rails'
+require 'webmock/rspec'
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 

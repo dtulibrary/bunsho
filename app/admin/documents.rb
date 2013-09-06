@@ -4,7 +4,7 @@ ActiveAdmin.register Document do
   actions :all, :except => :edit
 
   member_action :add_download, :method => :get do
-    document = Document.find_by_id(params[:id])
+    document = Document.find_by_uuid(params[:id])
     document.add_available_count
     document.save!
     redirect_to admin_document_path
@@ -13,5 +13,9 @@ ActiveAdmin.register Document do
   action_item :only => :show do
     link_to I18n.t('bunsho.admin.document.add_download'),
       add_download_admin_document_path
+  end
+
+  controller do
+    defaults finder: :find_by_uuid
   end
 end
