@@ -47,4 +47,11 @@ describe Document do
     end
   end
 
+  it "deletes download with document" do
+    download = FactoryGirl.create(:document_download)
+    download.document.destroy
+    Document.count.should eq 0
+    DocumentDownload.count.should eq 0
+  end
+
 end

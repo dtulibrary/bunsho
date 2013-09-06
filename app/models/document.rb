@@ -6,6 +6,8 @@ class Document < ActiveRecord::Base
   validates :downloaded_count, :numericality => { :only_integer => true}
   validates :drm, :inclusion => { :in => [true, false] }
 
+  has_many :document_downloads, :dependent => :destroy
+
   def add_available_count
     self.available_count += 1
   end
