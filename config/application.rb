@@ -76,7 +76,7 @@ module Bunsho
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.store_dir = "/var/lib/bunsho"
+    config.store_dir = "/tmp/bunsho"
     config.default_available_count = 3
 
     config.main_service_url = nil
