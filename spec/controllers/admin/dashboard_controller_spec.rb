@@ -15,6 +15,7 @@ describe Admin::DashboardController do
 
   describe "Get dashboard" do
     it "renders the dashboard view" do
+      FactoryGirl.create(:document)
       get :index
       response.status.should be(200)
       response.should render_template :index

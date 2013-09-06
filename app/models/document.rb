@@ -13,6 +13,8 @@ class Document < ActiveRecord::Base
 
   before_destroy { |rec| FileUtils.rm rec.file_name, :force => true }
 
+  scope :recent, :limit => 10, :order => 'created_at DESC'
+
   def initialize(*args)
     super(*args)
     self.uuid ||= UUIDTools::UUID.timestamp_create.to_s

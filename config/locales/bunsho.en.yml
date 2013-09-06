@@ -3,6 +3,10 @@ en:
     admin:
       document:
         add_download: "Add download"
+        recent: "Recent documents"
+        header:
+          download: "Number of times downloaded"
+          uuid: "Identifier of document"
     document:
       limit_reached: "The limit for number of downloads reached."
       unknown: "The url you have entered/clicked is not correct."
