@@ -1,0 +1,51 @@
+<div class="span12">
+  <div class ="row">
+    <div class="span12">
+      <h4><%= t('bunsho.download.title') %></h4>
+    </div>
+  </div>
+
+  <% if @document && @document.can_download? %>
+  <div class="row">
+    <div class="span12">
+      <%= t('bunsho.download.ready') %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="offset2 span10 dtu-spacing">
+      <%= link_to t('bunsho.download.text'), document_file_path(@document),
+          :class => 'btn btn-primary' %>
+      <small>(<%= t('bunsho.download.left', :count =>
+        @document.available_count) %>)</small>
+    </div>
+  </div>
+  <% else %>
+    <% if @document %>
+      <div class="row">
+        <div class="span12">
+          <%= t('bunsho.download.no_more') %>
+        </div>
+      </div>
+    <% else %>
+      <div class="row">
+        <div class="span12">
+          <%= t('bunsho.document.unknown') %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+
+  <div class="row">
+    <div class="span12 dtu-spacing">
+      <%= t('bunsho.question') %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <%= t('bunsho.contact') %>
+    </div>
+  </div>
+</div>
+

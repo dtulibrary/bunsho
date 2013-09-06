@@ -62,6 +62,22 @@ class Document < ActiveRecord::Base
     File.join(config.store_dir, uuid.gsub(/^(.)(.)/, '\1/\2/'))
   end
 
+  def can_download?
+    available_count > 0 ? true : false
+  end
+
+  def downloaded(ip)
+    download = DocumentDownload.create(
+      :document => self,
+      :downloaded_at => Time.now,
+      :downloaded_from => ip
+    )
+    download.save
+    self.available_count -= 1
+    self.downloaded_count += 1
+    self.save!
+  end
+
   def to_param
     self.uuid
   end

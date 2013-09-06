@@ -6,7 +6,7 @@ describe Rest::DocumentsController do
 
   describe "GET #index" do
      it "should not route" do
-       { :get => "/docuemnts" }.should_not be_routable
+       { :get => "/documents" }.should_not be_routable
      end
   end
 

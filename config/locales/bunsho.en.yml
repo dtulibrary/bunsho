@@ -3,3 +3,16 @@ en:
     admin:
       document:
         add_download: "Add download"
+    document:
+      limit_reached: "The limit for number of downloads reached."
+      unknown: "The url you have entered/clicked is not correct."
+    download:
+      title: "Download document"
+      ready: "Your requested document is now ready to be downloaded. Click on the link below to download it"
+      text: "Download"
+      left:
+        one: "You have 1 download left"
+        other: "You have %{count} downloads left"
+      no_more: "You have no more downloads left of this document"
+    question: "If you have any questions regarding your order, please contact us by sending an email to dtic@dtic.dtu.dk."
+    contact: "DTU Library – http://dtic.dtu.dk"
