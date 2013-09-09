@@ -28,7 +28,7 @@ class Rest::DocumentsController < ApplicationController
       format.html { render }
       format.json { render :json => @doc, :status => @doc ? 200 : 406 }
       format.text { render :text =>
-                    (@doc ? rest_document_show_url(@doc.uuid) : ''),
+                    (@doc ? document_show_url(@doc.uuid) : ''),
                     :status => (@doc ? 200 : 406) }
     end
   end

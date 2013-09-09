@@ -25,7 +25,7 @@ describe Rest::DocumentsController do
     it "renders text" do
       get :show, uuid: @document1.uuid, :format => :text
       response.header['Content-Type'].should include 'text/plain'
-      response.body.should eq 'http://test.host/rest/documents/'+@document1.uuid
+      response.body.should eq 'http://test.host/documents/'+@document1.uuid
     end
   end
 
