@@ -10,11 +10,11 @@ gem 'capistrano'
 gem 'bootstrap-sass'
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.0.3'
-  gem 'turbo-sprockets-rails3'
+  #gem 'turbo-sprockets-rails3'
   gem 'findit_font', :git => 'git://github.com/dtulibrary/findit_font.git'
 end
 
