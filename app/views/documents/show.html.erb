@@ -20,6 +20,16 @@
         @document.available_count) %>)</small>
     </div>
   </div>
+
+  <div class="row dtu-spacing">
+    <div class="span1">
+      <b><%= t('bunsho.copyright') %></b>
+    </div>
+    <div class="span11">
+      <%= t('bunsho.copyright_text') %>
+    </div>
+  </div>
+
   <% else %>
     <% if @document %>
       <div class="row">
@@ -39,12 +49,18 @@
   <div class="row">
     <div class="span12 dtu-spacing">
       <%= t('bunsho.question') %>
+      <a href="mailto:<%= t('bunsho.contact_mail') %>">
+        <%= t('bunsho.contact_mail') %>
+      </a>
     </div>
   </div>
 
   <div class="row">
     <div class="span12">
       <%= t('bunsho.contact') %>
+      <a href="<%= t('bunsho.contact_url') %>">
+        <%= t('bunsho.contact_url') %>
+      </a>
     </div>
   </div>
 </div>

@@ -18,5 +18,17 @@ en:
         one: "You have 1 download left"
         other: "You have %{count} downloads left"
       no_more: "You have no more downloads left of this document"
-    question: "If you have any questions regarding your order, please contact us by sending an email to dtic@dtic.dtu.dk."
-    contact: "DTU Library – http://dtic.dtu.dk"
+    question:
+      If you have any questions regarding your order, please contact
+      us by sending an email to 
+    contact_mail: dtic@dtic.dtu.dk
+    contact: "DTU Library – "
+    contact_url: http://dtic.dtu.dk
+    copyright: "Copyright"
+    copyright_text:
+      The document is protected by Danish and International Copyright Laws. A
+      single copy of the document has been provided for your use. You are
+      responsible for complying with all appropriate copyright laws with your
+      use of "the" document.
+    main:
+      title: "Document delivery"
