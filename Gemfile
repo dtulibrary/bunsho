@@ -6,7 +6,7 @@ gem 'activeadmin'
 gem 'devise_cas_authenticatable'
 gem 'validates_timeliness'
 gem 'uuidtools'
-gem 'capistrano'
+gem 'capistrano', '~> 2.15'
 gem 'bootstrap-sass', '~> 2.3.0'
 
 group :assets do
