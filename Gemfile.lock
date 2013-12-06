@@ -274,7 +274,7 @@ DEPENDENCIES
   activeadmin
   bootstrap-sass (~> 2.3.0)
   brakeman
-  capistrano (~> 2.0)
+  capistrano (~> 2.15)
   coffee-rails (~> 3.2.1)
   debugger
   devise_cas_authenticatable
