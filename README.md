@@ -50,12 +50,12 @@ config/application.local.rb
 
 An example with the default values.
 
-  module Bunsho
-    class Application < Rails::Application
-      config.store_dir = "/var/lib/bunsho"
-      config.default_available_count = 3
+    module Bunsho
+      class Application < Rails::Application
+        config.store_dir = "/var/lib/bunsho"
+        config.default_available_count = 3
+      end
     end
-  end
 
 store_dir is the directory where documents will be store. Make sure you
 have plenty of room for the documents. A number of sub directories will be
@@ -70,11 +70,11 @@ Admin Interface
 The admin interface requires a CAS login server to be available.
 The CAS server is configured with a file in config/initializers.
 
-  Devise.setup do |config|
-    config.secret_key = 'put-secret-here'
-    config.cas_create_user = false
-    config.cas_base_url = "https://auth.dtu.dk/dtu"
-  end
+    Devise.setup do |config|
+      config.secret_key = 'put-secret-here'
+      config.cas_create_user = false
+      config.cas_base_url = "https://auth.dtu.dk/dtu"
+    end
 
 *cas_create_user* tells if users must be created in advance in order to login.
 Setting this value to true means anyone able to login into the CAS server
