@@ -298,5 +298,3 @@ DEPENDENCIES
   validates_timeliness
   webmock
 
-BUNDLED WITH
-   1.12.5
