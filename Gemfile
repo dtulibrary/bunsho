@@ -7,7 +7,7 @@ gem 'devise_cas_authenticatable'
 gem 'validates_timeliness'
 gem 'uuidtools'
 gem 'capistrano', '~> 2.15'
-gem 'bootstrap-sass', '~> 2.3.0'
+gem 'bootstrap-sass', '~> 3.1.1'
 
 group :assets do
   gem 'sass-rails'

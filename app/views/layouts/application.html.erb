@@ -26,29 +26,29 @@
 
   </head>
   <body>
-  <%= render :partial => 'shared/header_navbar' %>
+    <%= render :partial => 'shared/header_navbar' %>
 
-  <div id="ajax-modal" class="modal hide fade" tabindex="-1"></div>
+    <div id="ajax-modal" class="modal hide fade" tabindex="-1"></div>
 
-<!-- /container -->
-  <div id="main-container" class="container">
-            <!-- Top bar -->
-            <div id="search-found" class="row hidden-phone">
-            </div>
-            <!-- /Top bar -->
-                  <div class="row">
-                      <div class="span12">
-                        <div id="main-flashes">
-                          <%= render :partial=>'/flash_msg' %>
-                        </div>
-                      </div>
-                  </div>
+    <!-- /container -->
+    <div id="main-container" class="container">
+      <!-- Top bar -->
+      <div id="search-found" class="row">
+      </div>
+      <!-- /Top bar -->
+      <div class="row">
+        <div class="col-md-12">
+          <div id="main-flashes">
+            <%= render :partial=>'/flash_msg' %>
+          </div>
+        </div>
+      </div>
 
-                  <div class="row">
-                       <%= yield %>
-                       </div>
-</div>
+      <div class="row">
+        <%= yield %>
+      </div>
+    </div>
 
-<%= render :partial => 'shared/footer' %>
-    </body>
+    <%= render :partial => 'shared/footer' %>
+  </body>
 </html>
